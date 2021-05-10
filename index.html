@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel = "icon" href = "https://pic.pimg.tw/baseballcamp/1342232337-3076558338_n.jpg">
+<style>
+body {background-color: Lightgray;}
+.link:hover { color: #FF0000; }
+</style>
+
+</head>
+
+<body>
+<h2>Computer Science HW3  : Personal Website</h2>
+<p>
+My name is Tom, I am a nineteen-year-old student whose high school is
+<a class = "link" href="https://tcfsh.tc.edu.tw/" target="_blank"><i>Taichung First Senior High School(TCFSH)</i></a>. After I graduated, I applied to the
+<a class = "link" href="https://web.ee.ntu.edu.tw/" target="_blank"><i>Electrical Engineering department</i></a>
+ of National Taiwan University(NTU), which is where I had always been hoping to learn in.
+</p>
+
+<p>
+When it comes to my hobbies, playing baseball can never be ignored. Recently, I joined Red Devil, the baseball team of our department; besides, I check the result of bseball games of both 
+<a class = "link" href="http://www.cpbl.com.tw/" target="_blank"><i>CPBL</i></a>
+and
+<a class = "link" href="https://www.mlb.com/" target="_blank"><i>MLB</i></a>
+everyday. Also, I enjoy traveling a lot, since I can get rid of the demanding and annoying schoolwork for a while. I often visit 
+<a class = "link" href="https://www.google.com.tw/maps/@23.546162,120.6402133,8z?hl=zh-TW" target="_blank"><i>Google Map</i></a>
+to find some scenic spots and highly-recommended restaurants. Lastly, I relish singing due to the fact that I am allowed to vent anger or sorrow in a moderate way. It goes without saying that  
+<a class = "link" href="https://www.youtube.com/" target="_blank"><i>Youtube</i></a>
+is one of my favorite websites for such a music lover like me.
+</p>
+
+<img src="https://pic.pimg.tw/baseballcamp/1342232337-3076558338_n.jpg" alt="Me" width="260" height="345">
+<p>
+</p>
+
+<audio controls autoplay loop>
+ <source src="Chopin.mp3" loop = 1 autostart = 1 hidden = 1 type="audio/mpeg">
+</audio>
+
+<p>
+</p>
+<p>
+</p>
+
+<script language="JavaScript">
+function ShowTime(){
+　var NowDate=new Date();
+　var h=NowDate.getHours();
+　var M=NowDate.getMinutes();
+　var s=NowDate.getSeconds();　
+  var d=NowDate.getDate();
+  var m=NowDate.getMonth()+1;
+  var y= NowDate.getFullYear();
+　document.getElementById('showbox').innerHTML = ('0'+m).slice(-2)+'-'+d+'-'+y+' '+('0'+h).slice(-2)+':'+('0'+M).slice(-2)+':'+('0'+s).slice(-2);
+　setTimeout('ShowTime()',1000);
+}
+</script>
+<body onload="ShowTime()">
+<div id="showbox"></div>
+
+</body>
+</html>
